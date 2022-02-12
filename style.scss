@@ -1,0 +1,43 @@
+#display{
+    max-width: 90vw;
+    margin: auto;
+    table {
+        margin: 1rem auto 2rem auto;
+        border: 2px solid;
+        width: 100%;
+        tr {
+            background-color: aliceblue;
+            &:nth-child(2n) {
+                background-color: antiquewhite;
+            }
+            &#heading {
+                border: 2px solid;
+                background-color: white;
+                th {
+                    font-size: 18px;
+                    padding: 0.5rem;
+                    &#date {
+                        cursor: pointer;
+                        svg{
+                            transition-duration: 300ms;
+                        }
+                    }
+                    &#authorName {
+                        cursor: pointer;
+                        svg{
+                            transition-duration: 300ms;
+                        }
+                    }
+                }
+            }
+            td {
+                padding: 0 0.5rem;
+                height: 3rem;
+            }
+        }
+    }
+    h1 {
+        text-align: center;
+        font-size: 40px;
+    }
+}
